@@ -26,12 +26,9 @@ br.mo {
     display: none;
 }
 
-/* body {
-    height: 3000px;
-} */
 /* header */
 header {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0, 0.2);
     width: 100%;
 
     /* 
@@ -97,16 +94,17 @@ header .inner-header .tnb li a {
 }
 
 header .inner-header .tnb li:first-child a i,
-header .inner-header .tnb li:nth-child(2) a i {
+header .inner-header .tnb li:nth-child(2) a i
+ {
     font-size: 20px;
     margin-right: 8px;
 }
 
 header .inner-header .tnb li:last-child a {
     display: block;
-    widows: 105px;
+    width: 105px;
     line-height: 2;
-    border: 1px solid#fff;
+    border: 1px solid #fff;
     border-radius: 30px;
     margin-top: 34px;
 }
@@ -117,13 +115,13 @@ header .inner-header .tnb li:last-child a:hover {
 }
 
 header .inner-header .tnb li:last-child a i {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 /* section main */
 section.main {
     height: 100vh;
-    background: url("../img/vis_4.jpg") no-repeat center/cover fixed;
+    background: url("../img/vis_4.jpg") no-repeat center/cover fixed;    
     position: relative;
 }
 
@@ -137,8 +135,8 @@ section.main .main-title {
 
     color: #fff;
     text-align: center;
-    /* x-offset y-offset blurcolor */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* x-offset y-offset blur shadow-color */
+    text-shadow: 2px 2px 5px rgba(0,0,0, 0.7);
 }
 
 section.main .main-title h2 {
@@ -148,7 +146,7 @@ section.main .main-title h2 {
 
 section.main .main-title p {
     font-size: 25px;
-    margin: 25px;
+    margin-bottom: 25px;
 }
 
 section.main .main-title .view {
@@ -169,8 +167,7 @@ section.main .main-title .view::after {
     content: "";
     width: 0;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    display: block;
+    background: rgba(255,255,255, 0.4);    
     position: absolute;
     left: 0;
     top: 0;
@@ -218,16 +215,16 @@ section.about ul li {
     width: 33.3333%;
 }
 
-section.about ul a .img-box {
+section.about ul li a .img-box {
     overflow: hidden;
 }
 
-section.about ul a .img-box img {
+section.about ul li a .img-box img {
     width: 100%;
     transition: 0.8s;
 }
 
-section.about ul a:hover .img-box img {
+section.about ul li a:hover .img-box img {
     transform: scale(1.2);
 }
 
@@ -259,7 +256,6 @@ section.about ul li a .text p.more::before {
     font-size: 15px;
     line-height: 2;
 
-    display: block;
     width: 30px;
     height: 30px;
     background: #ff8342;
@@ -269,23 +265,27 @@ section.about ul li a .text p.more::before {
     top: 4px;
 }
 
-/* section invation */
+/* section innovation */
 section.innovation {
     margin-bottom: 150px;
 }
-section.innovation .title{
 
+section.innovation .title {
+    color: #000;
+    text-align: center;
 }
-section.innovation .title h2{
-
+section.innovation .title h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
 }
-section.innovation .title span {
+section.innovation .title h2 span {
     color: #ff8342;
 }
-section.innovation .title p{
+section.innovation .title p {
     font-size: 18px;
     color: #555;
 }
+
 section.innovation .img-box {
     width: 1400px;
     height: 540px;
@@ -293,37 +293,40 @@ section.innovation .img-box {
     margin: 50px auto 0;
     position: relative;
 }
+
 section.innovation .img-box .inner {
     background: #3a3c4e;
     width: 80%;
-    border: 2px solid #555;
 
     position: absolute;
     left: 50%;
     bottom: -50px;
     transform: translateX(-50%);
 }
+
 section.innovation .img-box .inner h3 {
     background: #fff;
     padding: 25px 45px;
     box-sizing: border-box;
     font-size: 18px;
 }
+
 section.innovation .img-box .inner .bottom {
     padding: 35px 85px;
     color: #fff;
     box-sizing: border-box;
     line-height: 1.6;
 }
-section.innovation .img-box .inner .bottom p{
+
+section.innovation .img-box .inner .bottom p {
     float: left;
 }
-section.innovation .img-box .inner .bottom a{
+section.innovation .img-box .inner .bottom a {
     float: right;
     padding: 7px 30px;
     background: #ff8342;
     border-radius: 50px;
 }
 section.innovation .img-box .inner .bottom a:hover {
-    background: #860000;
+    background: #f86010;
 }
